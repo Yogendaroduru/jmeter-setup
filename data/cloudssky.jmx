@@ -91,7 +91,7 @@
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">20</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.num_threads">10</stringProp>
         <stringProp name="ThreadGroup.ramp_time">2</stringProp>
         <longProp name="ThreadGroup.start_time">1363247040000</longProp>
         <longProp name="ThreadGroup.end_time">1363247040000</longProp>
@@ -234,17 +234,17 @@
               </elementProp>
               <elementProp name="influxdbUrl" elementType="Argument">
                 <stringProp name="Argument.name">influxdbUrl</stringProp>
-                <stringProp name="Argument.value">http://192.168.49.2:30446/api/v2/write?org=primary&amp;bucket=primary</stringProp>
+                <stringProp name="Argument.value">http://192.168.49.2:30446/api/v2/write?org=primary&amp;bucket=jmeter</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
               <elementProp name="influxdbToken" elementType="Argument">
                 <stringProp name="Argument.name">influxdbToken</stringProp>
-                <stringProp name="Argument.value">gGcMcsNrXcIlYFYWTGmF</stringProp>
+                <stringProp name="Argument.value">jAEB_7Si06DuG7wBPlyqxYqwDNKvxHheTLCWnA4doGsqlBUU_kngBeSnWFdXsIF30kdfa1b-hb43WH7ISIAwyw==</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
               <elementProp name="measurement" elementType="Argument">
                 <stringProp name="Argument.name">measurement</stringProp>
-                <stringProp name="Argument.value">primary</stringProp>
+                <stringProp name="Argument.value">jmeter</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
