@@ -2,7 +2,7 @@
 
 COUNTER=1
 skip=$1
-script=$2
+cloudssky=$2
 #shift #remove 2nd arg
 IP=""
 
@@ -23,7 +23,7 @@ do
  #modify values to slave
  sed -i -e 's/master/slave'$COUNTER'/g' $CONFIGPATH'slave'$COUNTER.yaml
  #update script name
- sed -i -e 's/JMXSCRIPT/'$script'/g' $CONFIGPATH'slave'$COUNTER.yaml
+ sed -i -e 's/JMXSCRIPT/'$cloudssky'/g' $CONFIGPATH'slave'$COUNTER.yaml
  #update datetime
  sed -i -e 's/DATETIME/'`date '+%Y-%m-%d_%H-%M-%S'`'/g' $CONFIGPATH'slave'$COUNTER.yaml
  #update persistance path
@@ -50,7 +50,7 @@ cp jmeter-master.yaml.bak $CONFIGPATH''master.yaml
 sed -i -e 's/SERVERS/'$IP'/g' $CONFIGPATH''master.yaml
 
 #update script name
- sed -i -e 's/JMXSCRIPT/'$script'/g' $CONFIGPATH'master.yaml'
+ sed -i -e 's/JMXSCRIPT/'$cloudssky'/g' $CONFIGPATH'master.yaml'
  #update datetime
  sed -i -e 's/DATETIME/'`date '+%Y-%m-%d_%H-%M-%S'`'/g' $CONFIGPATH'master.yaml'
  #update persistance path
